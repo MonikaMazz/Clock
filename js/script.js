@@ -29,15 +29,12 @@ for (i = 0; i < 12; i++) {
   var lead = document.getElementById("lead");
   var number = i + 1;
   numberAngle = (i + 1) / 12 * 360;
-  minusNumberAngle = numberAngle * -1;
   var numberElement = document.createElement('div');
+  var textnode = document.createElement('p');
+  numberElement.appendChild(textnode);
   numberElement.className = "number"
-  numberElement.innerHTML = "<p>" + number + "</p>";
+  textnode.innerHTML = number;
   numberElement.style.transform = `rotate(${numberAngle}deg)`;
-  // numberElement.children.style.transform = `rotate(${minusNumberAngle}deg)`;
-
-
-
+  textnode.style.transform = `rotate(-${numberAngle}deg)`;
   lead.appendChild(numberElement);
-
 };
