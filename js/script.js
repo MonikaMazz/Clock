@@ -30,11 +30,11 @@ for (i = 0; i < 12; i++) {
   var number = i + 1;
   numberAngle = (i + 1) / 12 * 360;
   var numberElement = document.createElement('div');
-  var textnode = document.createElement('p');
-  numberElement.appendChild(textnode);
+  var numberInside = document.createElement('p');
+  numberElement.appendChild(numberInside);
   numberElement.className = "number"
-  textnode.innerHTML = number;
+  numberInside.innerHTML = number;
   numberElement.style.transform = `rotate(${numberAngle}deg)`;
-  textnode.style.transform = `rotate(-${numberAngle}deg)`;
+  numberInside.style.transform = `rotate(-${numberAngle}deg)`;
   lead.appendChild(numberElement);
 };

@@ -14,6 +14,7 @@ body {
   border-radius: 50%;
   background-color: rgba(255, 189, 67, 0.884);
   position: relative;
+  border: 2px dashed orange;
 }
 
 #lead .number {
@@ -39,7 +40,7 @@ body {
   width: 1px;
   height: 45%;
   transform: rotate(35deg);
-  transform-origin: bottom right;
+  transform-origin: bottom center;
   position: absolute;
   top: 5%;
   left: 50%;
@@ -51,7 +52,7 @@ body {
   width: 1px;
   height: 35%;
   transform: rotate(80deg);
-  transform-origin: bottom right;
+  transform-origin: bottom center;
   position: absolute;
   top: 15%;
   left: 50%;
@@ -59,23 +60,25 @@ body {
 
 #hour {
   background-color: black;
-  width: 3px;
+  width: 4px;
+  border-radius: 2px;
   height: 25%;
   transform: rotate(134deg);
-  transform-origin: bottom left;
+  transform-origin: bottom center;
   position: absolute;
   top: 25%;
   left: 50%;
 }
 
 #screw {
-  width: 3%;
-  height: 3%;
+  width: 4%;
+  height: 4%;
   background-color: #aaa;
   border-radius: 50%;
   position: absolute;
-  top: 48.5%;
-  left: 48.5%;
+  top: 48%;
+  left: 48%;
+  border: 1px dashed gray;
 }
 
 .info {
