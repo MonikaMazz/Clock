@@ -4,8 +4,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-
 }
 
 .face {
@@ -15,6 +13,11 @@ body {
   background-color: rgba(255, 189, 67, 0.884);
   position: relative;
   border: 2px dashed orange;
+  transition: background-color 1s;
+}
+
+.face:hover {
+  background-color: rgba(223, 238, 91, 0.925);
 }
 
 #lead .number {
@@ -25,14 +28,9 @@ body {
   left: 45%;
   height: 50%;
   width: 10%;
-  /* background-color: white; */
   transform-origin: bottom center;
   transform: rotate(35deg);
   text-align: center;
-}
-
-#lead .number p {
-  /* transform: rotate(-35deg); */
 }
 
 #second {
@@ -44,12 +42,12 @@ body {
   position: absolute;
   top: 5%;
   left: 50%;
-
+  transition: transform 0.5s;
 }
 
 #minute {
   background-color: black;
-  width: 1px;
+  width: 2px;
   height: 35%;
   transform: rotate(80deg);
   transform-origin: bottom center;
@@ -60,7 +58,7 @@ body {
 
 #hour {
   background-color: black;
-  width: 4px;
+  width: 5px;
   border-radius: 2px;
   height: 25%;
   transform: rotate(134deg);

@@ -28,13 +28,13 @@ setInterval(function () {
 for (i = 0; i < 12; i++) {
   var lead = document.getElementById("lead");
   var number = i + 1;
-  numberAngle = (i + 1) / 12 * 360;
+  numberAngle = (i + 1) / 12 * 360; // angle of current number for rotate
   var numberElement = document.createElement('div');
   var numberInside = document.createElement('p');
   numberElement.appendChild(numberInside);
   numberElement.className = "number"
   numberInside.innerHTML = number;
-  numberElement.style.transform = `rotate(${numberAngle}deg)`;
-  numberInside.style.transform = `rotate(-${numberAngle}deg)`;
+  numberElement.style.transform = `rotate(${numberAngle}deg)`; // rotate
+  numberInside.style.transform = `rotate(-${numberAngle}deg)`; // rotate with minus to correct display of numbers
   lead.appendChild(numberElement);
 };
